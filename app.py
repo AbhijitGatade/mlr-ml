@@ -32,4 +32,4 @@ def mlrpred():
                                     data=np.array([rds, admin, ms, state]).reshape(1, 4)))
     #print(Profit)
     return render_template("mlrpred.html", Profit = int(Profit))
-app.run(debug = True)
+app.run(debug = False, host='0.0.0.0')
